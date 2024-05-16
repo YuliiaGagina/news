@@ -19,7 +19,7 @@
 
 .banner, .item{
      background: linear-gradient(-90deg, 
-#f7eae0 0%, #f1c6a5 50%, #f1c6a4 100%);
+#f1c6a4  0%, #f1c6a5 50%, #f1c6a4 100%);
   background-size: 400% 400%;
   animation: pulse 1.2s ease-in-out infinite;
 }
