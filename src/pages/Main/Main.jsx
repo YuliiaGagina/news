@@ -3,7 +3,7 @@ import NewsBanner from "../../components/NewsBanner/NewsBanner";
 import styles from "./styles.module.css";
 import { getNews } from "./../../api/apiNews";
 import NewsList from "./../../components/NewsList/NewsList";
-import Skeleton from "../../components/Skeleton/Skeleton";
+import Skeleton from "../../components/Sceleton/Sceleton";
 
 const Main = () => {
   const [news, setNews] = useState([]);
