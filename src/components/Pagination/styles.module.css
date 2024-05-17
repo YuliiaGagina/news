@@ -11,15 +11,11 @@
     border: none;
     background-color: white;
     cursor: pointer;
-
-
 }
+
+
 .pageNumber:disabled,.arrow:disabled {
-  
- 
-    cursor: default;
-
-
+  cursor: default;
 }
 
 
@@ -27,10 +23,7 @@
 
 .pageNumber {
     padding: 8px;
- 
-
-
-}
+ }
 
 .list{
    display: flex;
