@@ -13,4 +13,5 @@ const NewsList = ({ news }) => {
 };
 
 const NewsListWithSkeleton = withSkeleton(NewsList, "item", 10);
+
 export default NewsListWithSkeleton;
