@@ -1,0 +1,9 @@
+.section{
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 32px;
+}

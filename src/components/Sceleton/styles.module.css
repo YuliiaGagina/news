@@ -1,9 +1,18 @@
-
-
-.list{
+.columnList{
     display: flex;
  gap: 12px;
     flex-direction: column;
+  
+}
+
+
+.rowList{
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  width: 100%;
+  gap: 12px;
+
+    box-sizing: border-box;
   
 }
 .banner{
@@ -14,14 +23,14 @@
 }
 
 .item{
-    width: -100%;
+    width: 100%;
     height: 80px;
     
 }
 
 .banner, .item{
      background: linear-gradient(-90deg, 
-#f1c6a4  0%, #f1c6a5 50%, #f1c6a4 100%);
+#f7eae0  0%, #f1c6a5 50%, #f7eae0 100%);
   background-size: 400% 400%;
   animation: pulse 1.2s ease-in-out infinite;
 }

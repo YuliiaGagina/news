@@ -16,15 +16,4 @@ const NewsBanner = ({ item }) => {
   );
 };
 
-const NewsBannerWithSkeleton = withSkeleton(NewsBanner, "banner", 1);
-
-NewsBanner.propTypes = {
-  item: PropTypes.shape({
-    image: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    published: PropTypes.string.isRequired,
-    author: PropTypes.string.isRequired,
-  }).isRequired,
-};
-
-export default NewsBannerWithSkeleton;
+export default NewsBanner;
