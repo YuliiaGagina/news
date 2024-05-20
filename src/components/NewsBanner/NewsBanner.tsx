@@ -1,10 +1,15 @@
 import styles from "./styles.module.css";
-import PropTypes from "prop-types";
-import { formatTimeAgo } from "./../helpers/formatTimeAgo";
-import Image from "./../Image/Image";
-import withSkeleton from "./../helpers/hocs/withskeleton";
 
-const NewsBanner = ({ item }) => {
+import { formatTimeAgo } from "../helpers/formatTimeAgo";
+import Image from "../Image/Image";
+
+import { INews } from "../../interfaces";
+
+interface Props {
+  item: INews;
+}
+
+const NewsBanner = ({ item } :Props) => {
   return (
     <div className={styles.banner}>
       <Image image={item?.image} />

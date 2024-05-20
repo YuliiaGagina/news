@@ -1,9 +1,16 @@
 import styles from "./styles.module.css";
-import PropTypes from "prop-types";
-import { formatTimeAgo } from "../helpers/formatTimeAgo";
-import Image from "../Image/Image";
 
-const NewsItem = ({ item }) => {
+import { formatTimeAgo } from "../helpers/formatTimeAgo";
+
+import { INews } from "../../interfaces";
+
+
+interface Props{
+
+  item: INews;
+}
+
+const NewsItem = ({ item }: Props) => {
   return (
     <li className={styles.item}>
       <div

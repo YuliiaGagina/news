@@ -1,5 +1,8 @@
-import { formateDate } from "../helpers/formatDate";
+import { IPaginationProps } from "../../interfaces";
+
 import styles from "./styles.module.css";
+
+
 
 const Pagination = ({
   totalPages,
@@ -7,7 +10,7 @@ const Pagination = ({
   handlePageClick,
   handlePrevPage,
   handleNextPage,
-}) => {
+}: IPaginationProps) => {
   return (
     <div className={styles.pagination}>
       <button
