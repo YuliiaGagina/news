@@ -3,7 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { useTheme } from "./context/ThemeContext";
 import Main from "./pages/Main/Main";
-import { useAppSelector } from "./store";
+
 
 
 
