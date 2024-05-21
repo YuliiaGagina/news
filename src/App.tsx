@@ -12,7 +12,7 @@ import { useAppSelector } from "./store";
 
 function App() {
   const { isDark } = useTheme()
-  const news =  useAppSelector(state => state.news.news )
+
 
   return (
 
