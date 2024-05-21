@@ -8,17 +8,20 @@ import Categories from "../Categories/Categories";
 import { CategoriesApiResponse, IFilters } from './../../interfaces/index';
 import Slider from "../Slider/Slider";
 
+
 interface Props {
   filters: IFilters;
-  changeFilter: (key: string, value: string | number | null) => void
+  changeFilter: (key: string, value: string | number | null) => void;
+ 
 }
 
 const NewsFilters = ({ filters, changeFilter }: Props) => {
+  
   const { data: dataCategories } = useFetch<CategoriesApiResponse, null >(getCategories);
   return (
     <div className={styles.filters}>
       {dataCategories ? (
-        <Slider>
+        <Slider >
           <Categories
             categories={dataCategories.categories}
             selectedCategory={filters.category}
@@ -29,6 +32,7 @@ const NewsFilters = ({ filters, changeFilter }: Props) => {
         </Slider>
       ) : null}
       <Search
+   
         keywords={filters.keywords}
         setKeywords={(keywords) => changeFilter("keywords", keywords)}
       />

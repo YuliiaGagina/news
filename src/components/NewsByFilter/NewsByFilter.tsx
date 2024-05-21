@@ -15,6 +15,8 @@ import NewsFilters from "../NewsFilters/NewsFilters";
 import PaginationWrapper from "../PaginationWrapper/PaginationWrapper";
 import NewsListWithSkeleton from "../NewsList/NewsList";
 
+
+
 const NewsByFilter = () => {
  
 
@@ -49,7 +51,7 @@ const NewsByFilter = () => {
   };
   return (
     <section className={styles.section}>
-      <NewsFilters filters={filters} changeFilter={changeFilter} />
+      <NewsFilters  filters={filters} changeFilter={changeFilter} />
 
       <PaginationWrapper
         top
@@ -59,6 +61,7 @@ const NewsByFilter = () => {
         handlePageClick={handlePageClick}
         currentPage={filters.page_number}
         totalPages={TOTAL_PAGES}
+       
       >
         <NewsListWithSkeleton isLoading={isLoading} news={data?.news} />
       </PaginationWrapper>

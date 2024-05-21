@@ -9,10 +9,11 @@ interface Props {
  
 }
 
-const PaginationWrapper = ({ top, bottom, children, ...paginationProps }: Props & IPaginationProps) => {
+
+const PaginationWrapper = ({ top, bottom, children,   ...paginationProps }: Props & IPaginationProps) => {
   return (
     <>
-      {top && <Pagination {...paginationProps} />}
+      {top && <Pagination  {...paginationProps} />}
       {children}
       {bottom && <Pagination {...paginationProps} />}
     </>
