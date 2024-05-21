@@ -3,6 +3,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import { useTheme } from "./context/ThemeContext";
 import Main from "./pages/Main/Main";
+import { useAppSelector } from "./store";
 
 
 
@@ -10,7 +11,8 @@ import Main from "./pages/Main/Main";
 
 
 function App() {
-  const {isDark} = useTheme()
+  const { isDark } = useTheme()
+  const news =  useAppSelector(state => state.news.news )
 
   return (
 
