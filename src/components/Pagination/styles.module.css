@@ -17,6 +17,17 @@
 .pageNumber:disabled,.arrow:disabled {
   cursor: default;
 }
+.pagination.dark .pageNumber,
+.pagination.dark .arrow{
+    background-color:  #23272F;
+    color: #F6F7F9;
+}
+
+.pagination.light  .pageNumber,
+.pagination.light .arrow{
+    background-color:  white;
+    color: black;
+}
 
 
 
