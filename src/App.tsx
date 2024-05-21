@@ -9,8 +9,10 @@ import Main from "./pages/Main/Main";
 
 
 
+
 function App() {
-  const {isDark} = useTheme()
+  const { isDark } = useTheme()
+
 
   return (
 
