@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { IFilters } from "../../../interfaces";
+import { IFilters } from "../interfaces";
+
 
 export const useFilter = (initialFilters : IFilters) => {
   const [filters, setFilters] = useState<IFilters>(initialFilters);
